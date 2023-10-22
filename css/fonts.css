@@ -1,0 +1,49 @@
+
+
+
+@font-face {
+    font-family: "ArbFONTS-Al-Jazeera-Arabic-Light";
+    src:url("../webfonts/Al-Jazeera-arabic/ArbFONTS-Al-Jazeera-Arabic-Light.woff") ,  url("../webfonts/Al-Jazeera-arabic/ArbFONTS-Al-Jazeera-Arabic-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ArbFONTS-Al-Jazeera-Arabic-Regular";
+    src:url("../webfonts/Al-Jazeera-arabic/ArbFONTS-Al-Jazeera-Arabic-Regular.woff") ,  url("../webfonts/Al-Jazeera-arabic/ArbFONTS-Al-Jazeera-Arabic-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: "MYRIADPRO-SEMIBOLD";
+    src: url("../webfonts/myriad-pro/MYRIADPRO-SEMIBOLD.woff")  , url("../webfonts/myriad-pro/MYRIADPRO-SEMIBOLD.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: "ArbFONTS-Al-Jazeera-Arabic-Bold";
+    src:url("../webfonts/Al-Jazeera-arabic/ArbFONTS-Al-Jazeera-Arabic-Bold.woff")  , url("../webfonts/Al-Jazeera-arabic/ArbFONTS-Al-Jazeera-Arabic-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "MYRIADPRO-REGULAR";
+    src:url("../webfonts/myriad-pro/MYRIADPRO-REGULAR.woff")  , url("../webfonts/myriad-pro/MYRIADPRO-REGULAR.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MYRIADPRO-BOLD";
+    src:url("../webfonts/myriad-pro/MYRIADPRO-BOLD.woff")  , url("../webfonts/myriad-pro/MYRIADPRO-BOLD.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
