@@ -126,7 +126,7 @@ header {
 
 
 .fixed-nav {
-  background-color: var(--main-color);
+  background-color: #fff;
   margin-top: -112px;
   transition: all 0.3s ease-in-out;
 }
@@ -149,7 +149,7 @@ header {
 }
 .fixed-nav .logo {
   max-width: 130px;
-  filter: brightness(0) invert(1);
+  
 }
 .top-header{
   padding: 14px 0;
@@ -389,6 +389,10 @@ header {
 }
 .service-icon{
   margin-inline-end: 15px;
+  width: 77px;
+}
+.projects-content .service-icon{
+  width: 96px;
 }
 .serv-title-block{
   text-align: start;
@@ -398,7 +402,7 @@ header {
   align-items: center;
 }
 .serv-title{
-  color: var(--main-hover);
+  color: #7c6745;
   font-size: 24px;
   font-family: "ArbFONTS-Al-Jazeera-Arabic-Bold";
   margin: 0 0 11px;
@@ -525,16 +529,31 @@ color: var(--main-hover);
  
   align-items: center;
 }
-.two-inputs{
+.contact-inputs{
   display: flex;
   margin-bottom: 15px;
+  width: 560px;
+  position: relative
 }
-.arabic-input{
-  width: 280px;
+.english-value{
+  font-size: 18px;
+    color: var(--main-color);
+    font-family: "MYRIADPRO-REGULAR";
+    text-transform: capitalize;
+    position: absolute;
+    inset-inline-end: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+.arabic-english-input:placeholder-shown~span{
+  display: block;
+}
+.arabic-english-input{
+  width:100%;
   height: 54px;
  border:1px solid rgb(35, 31, 32);
- border-right: 0;
- border-left: 0;
+
   display: flex;
   align-items: center;
   padding: 0 18px;
@@ -543,13 +562,13 @@ color: var(--main-hover);
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0);
 }
-.arabic-input::placeholder{
+.arabic-english-input::placeholder{
   color: var(--main-color);
   font-size: 18px;
 }
-.arabic-input:focus{
+.arabic-english-input:focus{
 outline: none;
-
+border:1px solid var(--main-hover)
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -561,45 +580,48 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-.english-input{
-  width: 280px;
-  height: 54px;
- border:1px solid rgb(35, 31, 32);
- border-right: 0;
- font-family: "MYRIADPRO-REGULAR";
-  display: flex;
-  align-items: center;
-  padding: 0 18px;
-  color: var(--main-color);
-  font-size: 18px;
-  transition: 0.5s;
-  background-color: rgba(255, 255, 255, 0);
-  direction: ltr;
-}
-.english-input::placeholder{
-  color: var(--main-color);
-  font-size: 18px;
-}
-.english-input:focus{
-outline: none;
-}
+
 .contact-textarea{
   width: 560px;
   height: 124px;
  border:1px solid rgb(35, 31, 32);
- border-right: 0;
+z-index: 10;
+ position: absolute; 
+ left:0;
  
+ top: 0;
   display: flex;
   align-items: center;
-  padding: 10px 18px;
+ 
   color: var(--main-color);
   font-size: 18px;
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0);
-  margin-bottom: 19px;
+  
 }
+#wrap{
+  position:relative;
+height: 124px;
+margin-bottom: 19px; }
+
+
+.placeholder{ 
+  font-family: "ArbFONTS-Al-Jazeera-Arabic-Regular";
+  color: var(--main-color);
+  font-size: 18px;
+  position: absolute;
+  inset-inline-start: 18px;
+  top: 10px;
+  text-align: start;
+}
+.placeholder span em{ 
+  font-family: "MYRIADPRO-REGULAR";
+  font-style: normal;
+ }
 .contact-textarea:focus{
   outline: none;
+  padding: 10px 18px;
+  border: 1px solid var(--main-hover);
 }
 .send-button-div{
   display: flex;
@@ -831,8 +853,8 @@ html[dir="rtl"] .footer-accordion.active:after {
 /*                                 arrow-top                           */
 .arrow-top {
   position: fixed;
-  bottom: 75px;
-  inset-inline-start: 21px;
+  bottom: 10px;
+  inset-inline-start: 10px;
   display: none;
   z-index: 10;
   text-decoration: none !important;
@@ -912,7 +934,16 @@ html[dir="rtl"] .footer-accordion.active:after {
   .about-us-content {
     padding: 50px 0 60px;
 }
-  
+.contact-inputs{
+  width: 100%;
+}
+.services-title-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
   .about-paragraph{
     padding-inline-start: 0;
     max-width: 100%;
@@ -960,10 +991,17 @@ html[dir="rtl"] .footer-accordion.active:after {
   }
   .serv-block{
     width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .projects-section{
     padding: 50px 0 120px;
     background-position: 0;
+  }
+  .service-icon{
+    margin-inline-end: 0;
+    margin-bottom: 15px;
   }
   .project-block-link{
     width: 100%;

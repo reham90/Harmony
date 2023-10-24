@@ -409,21 +409,33 @@
   <div class="contact-content wow fadeInDown">
     <div class="form-block">
       <form>
-        <div class="two-inputs">
-          <input type="text" class="arabic-input" placeholder="الاسم" >
-          <input type="text" class="english-input" placeholder="Name" >
+        <div class="contact-inputs">
+          <input type="text" class="arabic-english-input" placeholder="الاسم" >
+         <span class="english-value">
+          name
+         </span>
           </div>
-          <div class="two-inputs">
-            <input type="email" class="arabic-input" placeholder="البريد الإلكتروني" >
-            <input type="email" class="english-input" placeholder="Email" >
+          <div class="contact-inputs">
+            <input type="email" class="arabic-english-input" placeholder="البريد الإلكتروني" >
+            <span class="english-value">
+              email
+             </span>
             </div>
-            <div class="two-inputs">
-              <input type="number" class="arabic-input" placeholder="رقم الهاتف" >
-              <input type="number" class="english-input" placeholder="Phone" >
+            <div class="contact-inputs">
+              <input type="number" class="arabic-english-input" placeholder="رقم الهاتف" >
+              <span class="english-value">
+                phone
+               </span>
               </div>
-              <textarea class="contact-textarea"> اخبرنا المزيد عن مشروعك أو استفسارك
-Tell us more about your project or inquiry
-                  </textarea>
+              <!-- <textarea class="contact-textarea" placeholder="اخبرنا المزيد عن مشروعك أو استفسارك  
+Tell us more about your project or inquiry"></textarea>  -->
+<div id="wrap">
+  <span class="placeholder">اخبرنا المزيد عن مشروعك أو استفسارك <br>
+    <span> 
+    <em>Tell us more about your project or inquiry</em></span></span>
+    <textarea class="contact-textarea"></textarea>
+</div>
+                  
                   <div class="send-button-div">
                     <button class="send-btn">
                       إرسال

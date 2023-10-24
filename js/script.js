@@ -101,7 +101,15 @@ $(window).scroll(function() {
 });
 
 
- 
+ ////////////////** textarea  *//////////////////
+ $('.contact-textarea').focus(function() {
+    $(this).parent().find('.placeholder').hide()
+       
+}).blur(function() {
+    if ($(this).val() == '') {
+        $(this).parent().find('.placeholder').show()
+    }
+})
 
 
   //////////** fixed arrow to top**//////////
