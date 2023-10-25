@@ -1033,6 +1033,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   }
   .contact-text-title{
     font-size: 25px;
+    text-align: center;
   }
   .contact-title-link{
     font-size: 25px;
@@ -1060,7 +1061,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   width: 100%;
 }
 .footer{
-  min-height: auto;
+  align-items: flex-start;
   padding: 60px 0 20px;
   position: relative;
 }
@@ -1081,5 +1082,8 @@ html[dir="rtl"] .footer-accordion.active:after {
 }
 .copy-flex{
   padding: 0;
+  position: absolute;
+  bottom: 25px;
+  width: 81%;
 }
 }
